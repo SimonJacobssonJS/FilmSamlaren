@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Det här är en sida för att visa filmer som går att katagorisera, söka och se mer information om. Skapad av Filmsamlaren med sammarbete av Hemmakväll" />
+    <title>Katagorier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <font color="#FF9D00">F</font>
+        <font color="#FFFFFF">I</font>
+        <font color="#FDE807">L</font>
+        <font color="#FF13C4">M</font>
+        <font color="#11AAEC">S</font>
+        <font color="#FFFFFF">A</font>
+        <font color="#0BE300">M</font>
+        <font color="#FFFFFF">L</font>
+        <font color="#FF13C4">A</font>
+        <font color="#11AAEC">R</font>
+        <font color="#FFFFFF">E</font>
+        <font color="#FF9D00">N</font>
+      </h1>
+      <nav>
+        <ul class="navList">
+          <li><a href="index.html" title="Gå till hemsidan">Hem</a></li>
+          <li>
+            <a href="categories.html" title="Visa filmkategorier">Kategorier</a>
+          </li>
+          <li><a href="about.html" title="Läs om oss">Om oss</a></li>
+        </ul>
+      </nav>
+      <div class="searchDiv">
+        <input type="text" id="searchInput" placeholder="Sök på filmer" />
+        <button id="searchButton" aria-label="Starta sökning">Sök</button>
+      </div>
+    </header>
+    <section class="categoryContainer">
+      <div class="categoryButtons">
+        <button id="topRatedButton">Top 10 filmer med högst betyg</button>
+        <button id="oldestButton">Top 10 äldsta filmer</button>
+        <button id="longestButton">Top 10 längsta filmer</button>
+        <button id="mostVotedButton">Top 10 mest röstade filmer</button>
+      </div>
+      <div class="videoWrapper" id="videoWrapper">
+        <video id="categoryVideo" autoplay loop muted>
+          <source
+            src="hemmakväll-godis.mp4"
+            width="640"
+            height="360"
+            frameborder="0"
+            allowfullscreen
+            controls
+            type="video/mp4" />
+          Din webbläsare stödjer inte video. Testa igen eller prova med en annan
+          webbläsare.
+        </video>
+      </div>
+      <div class="movieArea" id="movieArea"></div>
+    </section>
+    <div id="movieModal" class="movieModal">
+      <div class="movieModalContent">
+        <span id="closeModal" class="closeModal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="" />
+        <p id="modalDescription"></p>
+        <p><strong>Betyg:</strong> <span id="modalRating"></span></p>
+        <p><strong>Släpptes år:</strong> <span id="modalYear"></span></p>
+        <a id="modalLink" href="" target="_blank">More on IMDB</a>
+      </div>
+    </div>
+    <footer>
+      <p>
+        <span style="color: #ff9d00">©</span>
+        <span style="color: #0be300">2025</span>
+        <span style="color: #11aaec">FilmSamlaren</span> |
+        <a href="privacy.html" style="color: #fde807">Privacy Policy</a> |
+        <a href="contact.html" style="color: #ff13c4">Contact Us</a>
+      </p>
+      <p style="color: #ffffff">
+        Powered by
+        <a
+          href="https://rapidapi.com/octopusteam-octopusteam-default/api/imdb236/playground/apiendpoint_610f70ea-3ac7-4fa3-a3d5-2ee6af9c884b"
+          target="_blank"
+          style="color: #ff9d00"
+          >IMDB API</a
+        >
+        and Hemmakväll
+      </p>
+    </footer>
+    <script src="categories.js"></script>
+  </body>
+</html>
