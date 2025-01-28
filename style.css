@@ -358,6 +358,9 @@ nav ul li:nth-child(3) a:active {
     max-width: 800px;
     padding-bottom: 56.25%; /* Maintain the 16:9 aspect ratio */
   }
+  video {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -383,7 +386,10 @@ nav ul li:nth-child(3) a:active {
   }
 
   .videoContainer {
-    padding-bottom: 56.25%; /* Maintain the 16:9 aspect ratio */
+    display: none;
+  }
+  video {
+    display: none;
   }
 }
 
@@ -409,6 +415,9 @@ nav ul li:nth-child(3) a:active {
   }
 
   .videoContainer {
-    padding-bottom: 56.25%; /* Maintain the 16:9 aspect ratio */
+    display: none;
+  }
+  video {
+    display: none;
   }
 }
