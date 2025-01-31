@@ -330,7 +330,6 @@ nav ul li:nth-child(3) a:active {
   height: 0;
   padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio (height/width = 9/16) */
   overflow: hidden; /* Prevent overflowing content */
-  box-sizing: border-box;
 }
 
 .videoContainer iframe,
